@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 import javax.persistence.Id;
 
 @Repository
-public interface FirstRepository extends JpaRepository<First, Id> {
+public interface SecondRepository extends JpaRepository<First, Id> {
 
 }

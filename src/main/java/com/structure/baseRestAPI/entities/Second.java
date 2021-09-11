@@ -23,6 +23,15 @@ public class Second {
     @Column(nullable = false, unique = true)
     private Integer two;
 
+    @Column(nullable = false)
+    private String three;
+
+    @Column(nullable = false)
+    private String four;
+
+    @Column(nullable = false)
+    private String five;
+
     @OneToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
     private List<First> first;
 }
